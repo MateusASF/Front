@@ -2,25 +2,32 @@ header
 {
     background: sandybrown; 
     padding: 20px 0;
+    display: inline-block;
 }
 
 .caixa 
 {
     position: relative; 
-    width: 940px; 
-    margin: 0 auto; 
+    width: 100%;
+    height: 265px;
 }
 
 nav 
 {
+    width: 45%;
     position: absolute; 
     top: 130px; 
     right: 0; 
 }
 
+nav ul
+{
+    margin-left: 3%;
+} 
+
 nav li 
 {
-    display: block; 
+    display: inline; 
     margin: 0 0 0 15px;
 }
 
@@ -47,8 +54,9 @@ body {
 
 .imagemPerfil {
     margin: 10px;
-    width: 30%;
-
+    margin-left: 65px;
+    width: 250px;
+    height: 250px;
 }
 
 .minhaFoto {
@@ -84,14 +92,15 @@ body {
 }
 
 .sobreMim{
+    text-align: center;
     border: 2px solid #000000;
     border-radius: 5px;
     padding: 10px;
-    font-size: 30px;
+    font-size: 28px;
     margin: 60px;
     margin-top: 20px;
     padding: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -123,7 +132,7 @@ body {
 }
 .imagensProgr {
     border-top: 2%;
-    width: 25%;
+    width: 22%;
     border-radius: 40px;
 }
 
@@ -131,16 +140,19 @@ body {
     margin-top: 20px;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
 }
 
 .conhecimento  {
+    background-color: sandybrown;
     align-items: center;
+    padding: 15px;
 }
+
 .conhecimento ul {
     width: 30%;
     display: inline-block;
-    margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 14%;
 }
 
 .conhecimento ul li {
@@ -175,8 +187,9 @@ footer
 .rodape
 {
     color: #000000;
+    padding: 10px;
     font-size: 20px;
-    margin-top: 20px;
+    text-align: center;
 }
 
 
