@@ -1,0 +1,186 @@
+header /*alteramos a tag "header" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    background: #BBBBBB; /*altera a cor de fundo do texto*/
+    padding: 20px 0; /*Aumenta a area da forma inserindo um espaçamento interno*/
+}
+
+.caixa /*alteramos da classe "caixa" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    position: relative; /*muda a posição estética sem mudar a posição fixa*/
+    width: 940px; /*largura da forma*/
+    margin: 0 auto; /*melhor forma de centralizar algo no CSS*/
+}
+
+nav /*alteramos a tag "nav" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    position: absolute; /*permite mudar a posição inicial para qualquer ponto que quisermos*/
+    top: 110px; /*tamanho do espaçamento a superior*/
+    right: 0; /*tamanho do espaçamento a direita*/
+}
+
+nav li /*alteramos a tag "nav" e que também contenham a tag "li" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    display: inline; /*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha*/
+    margin: 0 0 0 15px; /*insere uma margem*/
+}
+
+nav a /*alteramos a tag "nav" e que também contenham a tag "a" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    text-transform: uppercase;  /*nessa linha alteramos a aparência para deixar tudo maiúsculo*/
+    color: #000000; /*serve para mudar a cor do texto*/
+    font-weight:bold ; /*adciona o "peso" negrito para a fonte*/
+    font-size: 22px; /*muda o tamanho do texto*/
+    text-decoration: none; /*tirar qualquer decoração como por exemplo sublinhados*/
+}
+
+nav a:hover /*aqui o hover é usado para quando passarmos o mouse e ele fazer uma ação que no caso é mudar a cor e sublinhar*/
+{
+    color: rgb(8, 53, 156); /*muda a cor em formato RGB*/
+    text-decoration: underline; /*insere o sublinhado no texto selecionado*/
+}
+
+.produtos /*alteramos da classe "produtos" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    width: 940px; /*largura da forma*/
+    margin: 0 auto; /*insere uma margem*/
+    padding: 50px 0; /*Aumenta a area da forma inserindo um espaçamento interno*/
+}
+
+.produtos li /*alteramos da classe "produtos" que contenham a tag "li" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    display: inline-block; /*aqui ainda podemos mudar o tamanho do elemento, todavia ele se baseia em seu conteúdo, além de todos ficarem alinhados*/
+    text-align: center; /*alinha o texto ao centro*/
+    width: 30%; /*aqui foi usado uma largura padrão de 30% a fim de manter tudo em um tamanho parecido*/
+    vertical-align: top; /*faz um alinhamento vertical*/
+    padding: 50px 0; /*Aumenta a area da forma inserindo um espaçamento interno*/
+    margin: 0 1.5%; /*insere uma margem (aqui usando porcentagem)*/
+    padding: 30px 20px; /*Aumenta a area da forma inserindo um espaçamento interno*/
+    box-sizing: border-box; 
+    border: 2px solid black; /*este é um modelo atual de declaração de borda, em que declaramos (espessura - forma - cor)*/
+    border-radius: 10px; /*aqui usamos uma propriedade para criar uma borda circular*/
+}
+
+.produtos li:hover h2 /*aqui usamos um novo comando na classe produtos para que quando passemos o mouse (hover) alteremos a tag h2*/
+{
+    font-size: 35px; /*muda o tamanho do texto*/
+}
+
+.produtos li:hover /*aqui usamos a classe produtos para que quando passemos o mouse pelo elemento a borda mude de cor*/
+{
+    border-color: rgb(4, 140, 52); /*altera a cor da borda*/
+}
+
+.produtos li:active /*aqui usamos a classe produtos para que quando cliquemos com o botão direito do mouse pelo elemento a borda mude de cor*/
+{
+    border-color: rgb(220, 109, 6); /*altera a cor da borda*/
+}
+
+h2 /*alteramos a tag "h2" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    font-size: 30px; /*muda o tamanho do texto*/
+    font-weight: bold; /*adciona o "peso" negrito para a fonte*/
+}
+
+.produto-descricao /*alteramos da classe "produto-descricao" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    font-size: 18px; /*muda o tamanho do texto*/
+}
+
+.produto-preco /*alteramos da classe "produto-preco" com as propriedades dos elementos que estão entre as chaves com CSS */
+{
+    font-size: 22px; /*muda o tamanho do texto*/
+    font-weight: bold; /*adciona o "peso" negrito para a fonte*/
+    margin-top: 10px; /*adiciona uma margem em cima de 10px*/
+}
+
+
+footer
+{
+    text-align: center;
+    background: url("../Imagens/bg.jpg"); /*aqui inserimos uma imagem de fundo, por padrão o CSS irá replicar a imagem até cobrir todo o fundo*/
+    padding: 40px 0; /*para criamos um espaçamento interno*/
+}
+
+.copyright
+{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form 
+{
+    margin: 40px 0;
+}
+
+form label, form legend
+{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox
+{
+    margin: 20px 0 ;
+}
+
+.enviar
+{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover
+{
+    background: rgb(66, 0, 197);
+    transform: scale(1.1);
+}
+
+#titulo-tabela
+{
+    font-size: 20px; 
+    font-weight: bold; 
+    color: black;
+}
+
+table
+{
+    transform: scale(1.5);
+    margin: 40px 40px 40px;
+}
+
+thead
+{
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td, th
+{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

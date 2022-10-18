@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!--usamos essa tag com o único propósito de evitar que o browser mude para os chamados “quirks mode” quando renderizar um documento-->
+<html> <!--usamos a tah "html" pois a partir do html 5 não passamos mais o número da versão, só dessa forma o navegador já usa a versão mais recente do HTML-->
+    <head> <!--usamos a tag "head" para colocarmos tudo que será informação para o navegador, como por exemplo: configurações de links-->
+        <meta charset="UTF-8"> <!--usamos a tag meta como o código "UTF-8" para podermos usar todas os caracteres e acentuações em nosso código, para que o navegador posssa ler eles-->
+        <title>Produtos - Barbearia Alura</title> <!--usamos a tag title para inserirmos um texto na aba guia do navegador-->
+        <link rel="stylesheet" href="../CSS/reset.css"> <!--aqui criamos um link para o arquivo "reset.css" que é padrão para tirar todas as configs dos navegadores-->
+        <link rel="stylesheet" href="../CSS/style-comentado.css"> <!--aqui criamos um link para o arquivo "produtos.css" que vai inserir elementos CSS ao nosso arquivo-->
+    </head>
+
+
+    <body> <!--usamos a tag "body" para inserirmos tudo que será conteúdo em nossa página-->
+        <header> <!--usamos a tag "header" (DIFERENTE DE HEAD) para criarmos uma cabeçalho em nossa página-->
+            <div class="caixa"> <!--criamos uma divisão com a classe caixa para faciliar a leitura e deixa o código melhor escrito-->
+                <h1><img src="../Imagens/logo.png"></h1> <!--aqui usamos a imagem dentro da tag "h1" para informar que nossa imagem será o foco central da nossa página-->
+                <nav> <!--aqui usamos essa tag especificamente para o bloco de navegação de nosso código-->
+                    <ul class="navegacao"> <!--aqui criamos uma lista não ordenada para que criemos "botões" de forma mais ordenada e limpa em nosso código-->
+                        <li><a href="index.html">Home</a></li> <!--quando criamos uma lista todos os elemntos da lista devem conter a tag "li"-->
+                        <li><a href="produtos_Comentado.html">Produtos</a></li> <!--a tag "a" é usada para criarmos um link que pode ser externo ou não (neste uso é interno)-->
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main> <!--aqui usamos essa tag especificamente para o bloco principal de nossa página-->
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2> <!--usamos a tag h2 por ser o segundo ponto focal de texto-->
+                    <img src="../Imagens/cabelo.jpg">
+                    <p class="produto-descricao">Na tesoura ou na máquina, como o cliente preferir</p> <!--usamos a tag "p" para criamos/usarmos um parágrafo-->
+                    <p class="produto-preco">R$ 25,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="../Imagens/barba.jpg"> <!--para usarmos uma imagem usamos a tag "img" seguida de source, todavia o uso mais comum é abreviado para "src" - vale lembrar que as imagens devem estar no meso nível do código HTML-->
+                    <p class="produto-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="../Imagens/cabelo+barba.jpg">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="copyright"> <!--usamos a tag "footer" para inserirmos um rodapé-->
+            <img src="../Imagens/logo-branco.png">
+            <p>&copy; Copyright Barbearia Alura - 2019</p> <!--o texto "&copy;" é um código de entidade do padrão Unicode para escrevermos o símbolo de copyright-->
+        </footer>
+
+    </body>
+</html>

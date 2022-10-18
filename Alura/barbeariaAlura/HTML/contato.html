@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--usamos essa tag com o único propósito de evitar que o browser mude para os chamados “quirks mode” quando renderizar um documento-->
+<html> <!--usamos a tah "html" pois a partir do html 5 não passamos mais o número da versão, só dessa forma o navegador já usa a versão mais recente do HTML-->
+    <head> <!--usamos a tag "head" para colocarmos tudo que será informação para o navegador, como por exemplo: configurações de links-->
+        <meta charset="UTF-8"> <!--usamos a tag meta como o código "UTF-8" para podermos usar todas os caracteres e acentuações em nosso código, para que o navegador posssa ler eles-->
+        <title>Contato - Barbearia Alura</title> <!--usamos a tag title para inserirmos um texto na aba guia do navegador-->
+        <link rel="stylesheet" href="../CSS/reset.css"> <!--aqui criamos um link para o arquivo "reset.css" que é padrão para tirar todas as configs dos navegadores-->
+        <link rel="stylesheet" href="../CSS/style-comentado.css"> <!--aqui criamos um link para o arquivo "produtos.css" que vai inserir elementos CSS ao nosso arquivo-->
+    </head>
+
+
+
+    <body> <!--usamos a tag "body" para inserirmos tudo que será conteúdo em nossa página-->
+        <header> <!--usamos a tag "header" (DIFERENTE DE HEAD) para criarmos uma cabeçalho em nossa página-->
+            <div class="caixa"> <!--criamos uma divisão com a classe caixa para faciliar a leitura e deixa o código melhor escrito-->
+                <h1><img src="../Imagens/logo.png" alt="Logo da Barbearia Alura"></h1> <!--aqui usamos a imagem dentro da tag "h1" para informar que nossa imagem será o foco central da nossa página-->
+                <nav> <!--aqui usamos essa tag especificamente para o bloco de navegação de nosso código-->
+                    <ul class="navegacao"> <!--aqui criamos uma lista não ordenada para que criemos "botões" de forma mais ordenada e limpa em nosso código-->
+                        <li><a href="index.html">Home</a></li> <!--quando criamos uma lista todos os elemntos da lista devem conter a tag "li"-->
+                        <li><a href="produtos_Comentado.html">Produtos</a></li> <!--a tag "a" é usada para criarmos um link que pode ser externo ou não (neste uso é interno)-->
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required> 
+                </textarea>
+
+                <fieldset><!--seprara as configurações de um bloco-->
+                    <legend>Como profere nosso contato?</legend> <!--legend é a tag de titulo de um fieldset-->
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatapp"><input type="radio" name="contato" value="whatapp" id="radio-whatapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset> 
+                    <legend>Qual horário prefere ser atendido?</plegend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+
+            <div>
+                <p id="titulo-tabela">Horários de Funcionamento</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+
+        <footer class="copyright"> <!--usamos a tag "footer" para inserirmos um rodapé-->
+            <img src="../Imagens/logo-branco.png" alt="Logo da Barbearia Alura"> <!--o Alt é usado para trazer acessibilidade a imagens-->
+            <p>&copy; Copyright Barbearia Alura - 2019</p> <!--o texto "&copy;" é um código de entidade do padrão Unicode para escrevermos o símbolo de copyright-->
+        </footer>
+
+    </body>
+</html>
