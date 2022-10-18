@@ -60,7 +60,8 @@ nav a
 nav a:hover 
 {
     color: rgb(8, 156, 126); 
-    text-decoration: underline; 
+    text-decoration: underline;
+    transition: 1s all;
 }
 
 .imagemPerfil {
