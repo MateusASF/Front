@@ -25,14 +25,14 @@ body {
 {
     position: relative; 
     width: 100%;
-    height: 265px;
+    height: 100px;
 }
 
 nav 
 {
     width: 45%;
     position: absolute; 
-    top: 130px; 
+    top: 40px; 
     right: 0; 
 }
 
@@ -43,7 +43,7 @@ nav ul
 
 nav li 
 {
-    font-size: 48px;
+    font-size: 30px;
     display: inline; 
     color: rgb(211, 186, 141);
     margin: 0 0 0 15px;
@@ -54,7 +54,7 @@ nav a
     text-transform: uppercase;  
     color: rgb(211, 186, 141);
     font-weight:bold ; 
-    font-size: 40px; 
+    font-size: 30px; 
     text-decoration: none; 
 }
 
@@ -66,10 +66,11 @@ nav a:hover
 }
 
 .imagemPerfil {
-    margin: 10px;
-    margin-left: 65px;
-    width: 250px;
-    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100px;
+    height: 100px;
 }
 
 .minhaFoto {
@@ -113,7 +114,7 @@ nav a:hover
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 10px;
-    font-size: 28px;
+    font-size: 20px;
     margin: 60px;
     margin-top: 20px;
     padding: 10px;
@@ -160,6 +161,7 @@ nav a:hover
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .conhecimento  {
@@ -179,13 +181,14 @@ nav a:hover
     font-weight: bold;
     font-size: 25px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
     margin-right: 10%;
     width: 30%;
     margin-left: auto;
 }
 
 .conhecimento ul li:hover {
-    color: darkred;
+    color: rgb(0, 175, 191);
 }
 
 
