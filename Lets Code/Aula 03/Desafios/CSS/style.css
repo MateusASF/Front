@@ -146,8 +146,8 @@ nav a:hover
 }
 .imagensProgr {
     position: absolute;
-    top: 590px;
-    width: 28%;
+    top: 560px;
+    width: 23%;
     border-radius: 40px;
 }
 
@@ -161,7 +161,7 @@ nav a:hover
 
 .conhecimento  {
     color: rgba(224, 239, 244, 0.911);
-    background-color: rgba(0, 5, 13, 0.352);
+    background-color: rgba(0, 5, 13, 0.905);
     align-items: center;
     padding: 15px;
 }
@@ -197,7 +197,7 @@ nav a:hover
 
 footer
 {
-    margin: 20px;
+    margin-bottom: 20px;
     text-align: center;
     padding: 200px 0; 
 }
