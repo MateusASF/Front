@@ -98,7 +98,7 @@
             <input type="submit" id="sub">
         </form>
 
-        <script>
+        <script> //Com JavaScript
             let form = document.querySelector("form");
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -108,13 +108,19 @@
                     body: data
                 })
                     .then(res => res.text())
-                    .then(data => {
+                    .then(data => { 
                         document.querySelector("#msg").innerHTML = "Sucesso em seu envio"
                         document.querySelector("#sub").value = "Enviado";
                     });
             });
         </script>
     </div>
+
+    <hr>
+    <hr>
+
+    <!--Sem JavaScript-->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPf7C-N706aDUamhnyQuga38Uaf_YDSkZ0JV9qoErOIB4yuQ/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
 </body>
 
