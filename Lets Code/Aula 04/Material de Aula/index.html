@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 04</title>
 </head>
 
 <body>
@@ -81,38 +82,39 @@
     </div>
 
     <hr>
-    <h2>forms</h2>
-    <br>
-    <h3 id="msg"></h3>
-    <form>
-        <label>Nome Completo</label>
-        <input type="text" name="nome" placeholder="Seu nome é..."> </br>
-        
-        <label>E-mail</label>
-        <input type="email" name="email" placeholder="dominio@exemplo.com" required> </br>
+    <h2 id="menuForms">forms</h2>
+    <div class="Formulario_conectado_com_planilha_google">
+        <h3 id="msg"></h3>
+        <form>
+            <label>Nome Completo</label>
+            <input type="text" name="nome" placeholder="Seu nome é..."> </br>
 
-        <label>Telefone</label>
-        <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" required> </br>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="dominio@exemplo.com" required> </br>
 
-        <input type="submit" id="sub">
-    </form>
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" required> </br>
 
-    <script>
-        let form = document.querySelector("form");
-        form.addEventListener('submit', (e)=> {
-            e.preventDefault();
-            let data = new FormData(form);
-            fetch('https://script.google.com/macros/s/AKfycbxYwcqa7l01HcUKnSTbt05YBEMezy3gzdAL-5AFQcFF0nHYN-qqYW1TLuBLgwov8grsug/exec',{
-                method: "POST",
-                body: data
-            })
-            .then(res => res.text())
-            .then(data => {
-                document.querySelector("#msg").innerHTML = "Sucesso em seu envio"
-                document.querySelector("#sub").value = "Enviado";
+            <input type="submit" id="sub">
+        </form>
+
+        <script>
+            let form = document.querySelector("form");
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let data = new FormData(form);
+                fetch('https://script.google.com/macros/s/AKfycbxYwcqa7l01HcUKnSTbt05YBEMezy3gzdAL-5AFQcFF0nHYN-qqYW1TLuBLgwov8grsug/exec', {
+                    method: "POST",
+                    body: data
+                })
+                    .then(res => res.text())
+                    .then(data => {
+                        document.querySelector("#msg").innerHTML = "Sucesso em seu envio"
+                        document.querySelector("#sub").value = "Enviado";
+                    });
             });
-        });
-    </script>
+        </script>
+    </div>
 
 </body>
 
