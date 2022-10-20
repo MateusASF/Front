@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Tabelas</h2>
+    <div>
+        <h3>Produto X</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit atque
+            possimus incidunt repellendus vitae in ad aliquam. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Impedit atque possimus incidunt
+            repellendus vitae in ad aliquam.
+        </p>
+        <table class="tabela-produtos" border="1">
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2">ProdutoX</th>
+                    <th colspan="2">Concorrente 1</th>
+                    <th colspan="2">Concorrente 2</th>
+                </tr>
+                <tr>
+                    <th>Grátis</th>
+                    <th>Premium</th>
+                    <th colspan="2"></th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Recurso 1</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td colspan="2">x</td>
+                    <td colspan="2">x</td>
+                </tr>
+                <tr>
+                    <td>Recurso 2</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Recurso 3</td>
+                    <td></td>
+                    <td>x</td>
+                    <td colspan="2">x</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Recurso 4</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td colspan="2">x</td>
+                    <td colspan="2">x</td>
+                </tr>
+                <tr>
+                    <td>Recurso 5</td>
+                    <td></td>
+                    <td>x</td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Recurso 6</td>
+                    <td></td>
+                    <td>x</td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <h2>forms</h2>
+    <br>
+    <h3 id="msg"></h3>
+    <form>
+        <label>Nome Completo</label>
+        <input type="text" name="nome" placeholder="Seu nome é..."> </br>
+        
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="dominio@exemplo.com" required> </br>
+
+        <label>Telefone</label>
+        <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" required> </br>
+
+        <input type="submit" id="sub">
+    </form>
+
+    <script>
+        let form = document.querySelector("form");
+        form.addEventListener('submit', (e)=> {
+            e.preventDefault();
+            let data = new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbxYwcqa7l01HcUKnSTbt05YBEMezy3gzdAL-5AFQcFF0nHYN-qqYW1TLuBLgwov8grsug/exec',{
+                method: "POST",
+                body: data
+            })
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector("#msg").innerHTML = "Sucesso em seu envio"
+                document.querySelector("#sub").value = "Enviado";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
