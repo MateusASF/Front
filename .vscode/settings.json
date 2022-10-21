@@ -2,5 +2,6 @@
     "cSpell.words": [
         "Safra"
     ],
-    "cSpell.language": "en,pt-BR,en-GB,en-US,lorem,pt"
+    "cSpell.language": "en,pt-BR,en-GB,en-US,lorem,pt",
+    "liveServer.settings.port": 5501
 }
