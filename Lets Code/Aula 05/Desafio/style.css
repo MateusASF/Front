@@ -1,0 +1,44 @@
+/*Header e layout base*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.homePage {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(sushiHome3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homePage h1 {
+    font-size: 90px;
+    color: white;
+    margin-top: 100px
+}
+
+.homePage a {
+    text-decoration: none;
+    background-color: rgba(172, 33, 15, 0.54);
+    padding: 3px 30px;
+    border-radius: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.homePage a:hover {
+    background-color: rgba(159, 208, 11, 0.54);
+    transition: 0.5s all;
+}
+
+/*?-------------------------------*/
+
+

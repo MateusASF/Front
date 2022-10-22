@@ -1,0 +1,89 @@
+/*Header e layout base*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient(black, rgb(74, 74, 74));
+    height: 100vw;
+    background-repeat: no-repeat;
+}
+
+.headerCardapio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardapio h1 {
+    font-size: 90px;
+    color: white;
+    margin-top: 100px
+}
+
+.cardapio a{
+    text-decoration: none;
+    background-color: rgba(172, 170, 15, 0.54);
+    margin-left: 240px;
+    padding: 2px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.cardapio a:hover{
+    background-color: rgba(172, 60, 15, 0.54);
+    transition: 0.5s all;
+}
+
+
+/*!Sushis--------------------*/
+.itens{
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.itens img {
+    width: 20%;
+    border: 2px solid darkred;
+    border-radius: 10%;
+}
+
+.itens ul {
+    margin-left: 20px;
+    margin-top: 18px;
+    font-size: 25px;
+    color: blanchedalmond;
+    list-style: square;
+
+}
+
+.itens ul li {
+    margin-left: 20px;
+    width: 200px;
+    font-size: 15px;
+    color: blanchedalmond;
+    list-style: square;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    background-color: black;
+    color: brown;
+    font-weight: bold;
+    padding: 4.8%;
+    font-size: 30px
+}
