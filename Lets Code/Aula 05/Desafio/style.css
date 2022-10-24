@@ -6,39 +6,49 @@
     box-sizing: border-box;
 }
 
-
 .homePage {
     display: flex;
-    align-items: center;
-    justify-content: top;
+    align-items: flex-start;
     flex-direction: column;
-    width: 100vw;
     height: 100vh;
-    background-image: url(sushiHome3.jpg);
+    background-image: url(./imagens/fundo3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .homePage h1 {
     font-size: 90px;
-    color: white;
-    margin-top: 100px
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-top: 100px;
+    font-family: Calligraffitti;
 }
 
 .homePage a {
     text-decoration: none;
     background-color: rgba(172, 33, 15, 0.54);
+    position: relative;
+    left: 200px;
     padding: 3px 30px;
     border-radius: 20px;
     font-size: 40px;
     color: white;
+    font-family: Calligraffitti;
 }
 
 .homePage a:hover {
-    background-color: rgba(159, 208, 11, 0.54);
+    background-color: rgba(226, 7, 7, 0.938);
     transition: 0.5s all;
+    transform: scale(1.1);
 }
 
 /*?-------------------------------*/
 
-
+img {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top: 330px;
+    left: 225px;
+    width: 10%;
+}
