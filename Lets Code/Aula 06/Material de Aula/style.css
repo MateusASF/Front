@@ -1,0 +1,18 @@
+.container {
+    background-color: blue;
+    color: azure;
+    display: flex;
+    /*flex-direction: column;;
+    flex-wrap: wrap-reverse;*/
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    align-items: center;;
+}
+
+.item {
+    padding: 5px;
+    margin: 5px auto;
+    background-color: tomato;
+}
